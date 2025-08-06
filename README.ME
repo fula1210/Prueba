@@ -1,0 +1,76 @@
+# Prueba Técnica - Ingeniero de Automatización QA - Wilmer Fula 
+
+//para este proyecto se manejo bajo las siguientes herramientas usando **Python + Behave + requests** para las pruebas de api y
+  para las pruebas WEB se utilizaron las herramientas **Python + Selenium + Behave**//
+
+  el siguiente proyecto se ejecuto en un entorno virtual para mejorar el rendimiento 
+  en caso que se desee realizar la instalacion se realiza el siguiente proceso 
+
+        # Crear entorno virtual
+                python -m venv venv
+
+        # Activar entorno virtual # En Windows
+                venv\Scripts\activate
+
+        # Instalar dependencias
+                pip install -r requirements.txt
+
+
+En este proyecto contiene la solución de las pruebas solicitadas:
+
+- ✅ Automatización de API con reqres.in 
+- ✅ Automatización UI del sitio [floristeriamundoflor.com](https://floristeriamundoflor.com) 
+---
+
+
+
+## 📁 Estructura del Proyecto
+
+
+Prueba_Automatizacion/
+|    ├── features/
+|    │   ├── listar_usuarios.feature
+    │   ├── crear_usuario.feature
+    │   ├── actualizar_usuario.feature
+    │   ├── eliminar_usuario.feature
+    │   ├── productos_carrito.feature
+|    │   └── steps/
+|    │       ├── test_api_steps.py
+|    │       └── test_ui_steps.py
+|    ├── requirements.txt
+└── README.md
+
+│---Prueba_Api
+|   \---features
+|       |   actualizar_usuario.feature
+|       |   agregar_productos_carrito.feature
+|       |   crear_usuario.feature
+|       |   eliminar_usuario.feature
+|       |   listar_usuarios.feature
+|       |   
+|       \---steps
+|               ejecucion.py
+|               
++---Prueba_WEB
+|   \---features
+|       |   productos_carrito.feature
+|       |   
+|       \---Steps
+|               Test_web.py
+
+
+
+
+// para la ejecucion del proyecto en las pruebas api se ejecuta el codigo con siguiente script 
+    desde la carpeta de features de Pruebas_Api 
+
+    behave features/listar_usuarios.feature
+    behave features/crear_usuario.feature
+    behave features/actualizar_usuario.feature
+    behave features/eliminar_usuario.feature
+
+
+// para la ejecucion del proyecto en las pruebas web se ejecuta el codigo con siguiente script 
+    desde la carpeta de features de Pruebas_WEB
+
+    behave features/productos_carrito.feature

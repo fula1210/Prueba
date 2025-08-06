@@ -1,0 +1,13 @@
+# Entorno virtual
+venv/
+
+# Cache de Python
+__pycache__/
+
+# Archivos compilados
+*.pyc
+*.pyo
+
+# Configs de IDEs
+.idea/
+.vscode/
